@@ -40,7 +40,7 @@ function Hero() {
 
         <div className="mt-10 flex items-center justify-center gap-x-6">
           <a
-            href="#projects"
+            href="#project"
             className="rounded-lg bg-indigo-600 px-5 py-3 text-sm font-semibold text-white shadow-md hover:bg-indigo-500 transition duration-300"
           >
             View Portfolio
