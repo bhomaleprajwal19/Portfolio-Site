@@ -1,0 +1,46 @@
+@import "tailwindcss";
+body {
+  background-color: black;
+  color: white;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.scrolling-tech {
+  animation: scroll-left 25s linear infinite;
+  width: max-content;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.no-scrollbar {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+@keyframes fadeInUpSmooth {
+  from {
+    opacity: 0;
+    transform: translateY(40px); /* Start lower */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);    /* Reach original position */
+  }
+}
+
+.fade-in-up-smooth {
+  animation: fadeInUpSmooth 1.5s ease-out forwards;
+}
